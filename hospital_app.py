@@ -24,16 +24,16 @@ hr_map = bundle['hr_map']
 dur_map = bundle['dur_map']
 cc_map = bundle['cc_map']
 
-st.header("Patient Information")
+st.header("Patient Information♂️♀️")
 
-age = st.number_input("Age", 1, 120, 35)
+age = st.number_input("Age🎂", 1, 120, 35)
 
 gender = st.selectbox(
   "Gender",
-  ["Female", "Male"]
+  ["Female👩👧♀️", "Male👨👦♂️"]
 )
 
-st.header("Symptoms")
+st.header("Symptoms🤒🩺")
 
 fever = st.checkbox("Fever🤒")
 cough = st.checkbox("Cough🤧")
@@ -48,7 +48,7 @@ skin_rash = st.checkbox("Skin Rash🔴🩹")
 st.header("Medical Information🩺")
 
 chief_complaint = st.selectbox(
-  "Chief Complaint",
+  "Chief Complaint📋🩺💬",
   list(cc_map.keys())
 )
 
