@@ -45,7 +45,7 @@ skinrash = st.checkbox("Skin Rash🔴🩹")
 st.header("Medical Information")
 
 chief_complaint = st.selectbox(
-  "Chief Complaint"
+  "Chief Complaint",
   list(cc_map.keys())
 )
 
