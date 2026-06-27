@@ -13,7 +13,7 @@ def load_model():
     
 bundle = load_model()
   
-model = bundle['mode']
+model = bundle['model']
 scaler = bundle['scaler']
 features = bundle['features']
 cols_to_scale = bundle['cols_to_scale']
