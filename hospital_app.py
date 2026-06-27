@@ -25,3 +25,8 @@ def load_model():
 st.header("Patient Information")
 
 age = st.number_input("Age", 1, 120, 35)
+
+gender = st.selectbox(
+  "Gender",
+  ["Female", "Male"]
+)
