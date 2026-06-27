@@ -24,12 +24,12 @@ hr_map = bundle['hr_map']
 dur_map = bundle['dur_map']
 cc_map = bundle['cc_map']
 
-st.header("Patient Information♂️♀️")
+st.header("Patient Information")
 
 age = st.number_input("Age🎂", 1, 120, 35)
 
 gender = st.selectbox(
-  "Gender",
+  "Gender♂️♀️",
   ["Female👩👧♀️", "Male👨👦♂️"]
 )
 
