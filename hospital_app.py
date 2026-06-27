@@ -55,6 +55,6 @@ duration = st.selectbox(
 )
 
 temperatore = st.selectbox(
-  "Temperature"
+  "Temperature",
   list(temp_map.keys())
 )
