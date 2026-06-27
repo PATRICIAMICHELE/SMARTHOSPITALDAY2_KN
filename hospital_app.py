@@ -89,3 +89,4 @@ if st.button("Predict Department"):
     'hypertension': int(hypertension),
     'heart_disease': int(heart_disease),
     'chief_complaint': cc_map.get(chief_complaint, 9),
+  }])
