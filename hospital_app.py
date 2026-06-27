@@ -41,3 +41,20 @@ stomach_pain = st.checkbox("Stomach Pain🤢")
 nausea_vomiting = st.checkbox("Nausea/Vomiting🤮")
 dizziness = st.checkbox("Dizziness😵‍💫")
 skinrash = st.checkbox("Skin Rash🔴🩹")
+
+st.header("Medical Information")
+
+chief_complaint = st.selectbox(
+  "Chief Complaint"
+  list(cc_map.keys())
+)
+
+duration = st.selectbox(
+  "Duration",
+  list(dur_map.keys())
+)
+
+temperatore = st.selectbox(
+  "Temperature"
+  list(temp_map.keys())
+)
