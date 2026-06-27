@@ -4,7 +4,7 @@ import pickle
 
 st.set_page_config(page_title="Helps Patients Navigate Symptoms", page_icon="🏥")
 
-st.title("The Poliran Hospital🏥-navigateursymptoms😷")
+st.title("The Poliran Hospital🏥-🩺navigateursymptoms😷")
 
 @st.cache_resource
 def load_model():
@@ -39,12 +39,12 @@ cough = st.checkbox("Cough🤧")
 headache = st.checkbox("Headache🤕")
 chest_pain = st.checkbox("Chest Pain😣🫀")
 stomach_pain = st.checkbox("Stomach Pain🤢")
-shortness_breath = st.checkbox("Shortness of breath")
+shortness_breath = st.checkbox("Shortness of breath😮‍💨😣")
 nausea_vomiting = st.checkbox("Nausea/Vomiting🤮")
 dizziness = st.checkbox("Dizziness😵‍💫")
 skinrash = st.checkbox("Skin Rash🔴🩹")
 
-st.header("Medical Information")
+st.header("Medical Information🩺")
 
 chief_complaint = st.selectbox(
   "Chief Complaint",
@@ -52,23 +52,23 @@ chief_complaint = st.selectbox(
 )
 
 duration = st.selectbox(
-  "Duration",
+  "Duration📅",
   list(dur_map.keys())
 )
 
 temperature = st.selectbox(
-  "Temperature",
+  "Temperature🌡️",
   list(temp_map.keys())
 )
 
 heart_rate_level = st.selectbox(
-  "Heart Rate",
+  "Heart Rate🫀",
   list(hr_map.keys())
 )
 
-hypertension = st.checkbox("High Blood Pressure")
-heart_disease = st.checkbox("Heart Disease")
-asthma = st.checkbox("Asthma")
+hypertension = st.checkbox("High Blood Pressure📈🩸")
+heart_disease = st.checkbox("Heart Disease🩺🫀")
+asthma = st.checkbox("Asthma🫁")
 
 if st.button("Predict Department"):
   patient = pd.DataFrame([{
