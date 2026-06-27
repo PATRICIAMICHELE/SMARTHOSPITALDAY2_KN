@@ -42,7 +42,7 @@ stomach_pain = st.checkbox("Stomach Pain🤢")
 shortness_breath = st.checkbox("Shortness of breath😮‍💨😣")
 nausea_vomiting = st.checkbox("Nausea/Vomiting🤮")
 dizziness = st.checkbox("Dizziness😵‍💫")
-skinrash = st.checkbox("Skin Rash🔴🩹")
+skin_rash = st.checkbox("Skin Rash🔴🩹")
 
 st.header("Medical Information🩺")
 
