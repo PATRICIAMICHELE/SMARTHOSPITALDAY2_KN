@@ -39,6 +39,7 @@ cough = st.checkbox("Cough🤧")
 headache = st.checkbox("Headache🤕")
 chest_pain = st.checkbox("Chest Pain😣🫀")
 stomach_pain = st.checkbox("Stomach Pain🤢")
+shortness_breath = st.checkbox("Shortness of breath")
 nausea_vomiting = st.checkbox("Nausea/Vomiting🤮")
 dizziness = st.checkbox("Dizziness😵‍💫")
 skinrash = st.checkbox("Skin Rash🔴🩹")
@@ -59,3 +60,32 @@ temperature = st.selectbox(
   "Temperature",
   list(temp_map.keys())
 )
+
+heart_rate_level = st.selectbox(
+  "Heart Rate",
+  list(hr_map.keys())
+)
+
+hypertension = st.checkbox("High Blood Pressure")
+heart_disease = st.checkbox("Heart Disease")
+asthma = st.checkbox("Asthma")
+
+if st.button("Predict Department"):
+  patient = pd.DataFrame([{
+    'age': age,
+    'gender': gender_map.get(gender, 0)
+    'fever': int(fever),
+    'cough': int(cough),
+    'headache': int(headache),
+    'chest_pain': int(chest_pain),
+    'shortness_breath': int(shortness_breath),
+    'nausea_vomiting': int(nausea_vomiting),
+    'dizziness': int(dizziness),
+    'skin_rash': int(skin_rash),
+    'temperature_level': temp_map.get(temperature_level, 1),
+    'heart_rate_level': temp_map.get(heart_rate_level, 1),
+    'duration': dur_map.get(duration, 1),
+    'asthma': int(asthma),
+    'hypertension': int(hypertension),
+    'heart_disease': int(heart_disease),
+    'chief_complaint': cc_map.get(chief_complaint, 9),
