@@ -44,10 +44,10 @@ skinrash = st.checkbox("Skin Rash🔴🩹")
 
 st.header("Medical Information")
 
-# chief_complaint = st.selectbox(
-#   "Chief Complaint",
-#   list(cc_map.keys())
-# )
+chief_complaint = st.selectbox(
+  "Chief Complaint",
+  list(cc_map.keys())
+)
 
 duration = st.selectbox(
   "Duration",
